@@ -7,7 +7,6 @@ A data visualization project that creates an interactive choropleth map displayi
 - [Features](#features)
 - [Quick Start](#quick-start)
 - [Installation](#installation)
-- [How to Use](#how-to-use)
 
 ## Features
 
@@ -73,46 +72,3 @@ Ensure you have a CSV file named `FDI_EconGrowth_Data.csv` with the following co
 - `year`: Year of the data (numeric)
 - `fdi_inflow`: FDI net inflow in USD
 
-## How to Use
-
-### Basic Usage
-
-1. **Open the Jupyter Notebook:**
-   ```bash
-   jupyter notebook "FDI in 23 years.ipynb"
-   ```
-
-2. **Run all cells** by clicking `Cell > Run All` or run them individually
-
-3. **View the interactive map** that appears at the bottom of the notebook
-
-### Customizing the Visualization
-
-You can easily customize the map by editing the configuration variables at the top of the main code cell:
-
-```python
-# Change these variables to customize your visualization
-COL_COUNTRY = "country"      # Your country column name
-COL_YEAR = "year"            # Your year column name
-COL_VALUE = "fdi_inflow"     # Your FDI value column name
-YEAR_TO_PLOT = 2023          # Change to any year in your dataset
-```
-
-### Changing the Color Scheme
-
-To use a different color palette, modify the `color_continuous_scale` parameter:
-
-```python
-color_continuous_scale="blues"  # Try: "reds", "greens", "purples", "viridis"
-```
-
-### Changing the Geographic Scope
-
-To view a different region:
-
-```python
-scope="world"  # Options: "asia", "europe", "africa", "north america", "south america"
-```
-
-- Built with [Plotly](https://plotly.com/)
-- Inspired by economic data visualization best practices
